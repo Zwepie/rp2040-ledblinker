@@ -4,16 +4,16 @@ enum Color
 {
     RED,
     GREEN,
-    BLUE
+    BLUE,
+    PURPLE
 };
 
 class Blinker
 {
-    public:
-
+public:
     Blinker(int pin);
     void initialize(Color theColor);
-    
+
 private:
     unsigned long lastTime = 0;
     unsigned long interval = 200;
@@ -23,7 +23,3 @@ private:
     Color color;
     void printColor();
 };
-
-
-
-
